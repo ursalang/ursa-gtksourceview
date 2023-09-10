@@ -17,7 +17,9 @@ Two files are provided:
 * `ursa.xml` defines the `text/x-ursa` MIME type
 * `ursa.lang` defines syntax highlighting patterns for Gtksourceview, the library used by the GNOME Text Editor, Gedit, and other programs.
 
-You need to identify two directories. The following settings are likely to be correct for most systems.
+You need to identify two directories. The following settings are likely to
+be correct for most systems at the time of writing. Note in particular that
+the version number “4” for Gtksourceview is likely to change with time!
 
 ```sh
 XDG_MIME_DIR=$HOME/.local/share/mime
