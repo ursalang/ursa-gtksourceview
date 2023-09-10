@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="text/x-ursa">
+        <comment>Ursa source code</comment>
+	<comment xml:lang="ara">شفرة مصدر Ursa</comment>
+	<comment xml:lang="be@latin">Kryničny kod Ursa</comment>
+	<comment xml:lang="bg">Изходен код на Ursa</comment>
+	<comment xml:lang="ca">codi font en Ursa</comment>
+	<comment xml:lang="da">Ursakildekode</comment>
+	<comment xml:lang="de">Ursa-Quelltext</comment>
+	<comment xml:lang="el">πηγαίος κώδικας Ursa</comment>
+	<comment xml:lang="en_GB">Ursa source code</comment>
+	<comment xml:lang="eo">Ursa-fontkodo</comment>
+	<comment xml:lang="es">código fuente en Ursa</comment>
+	<comment xml:lang="eu">Ursa iturburu-kodea</comment>
+	<comment xml:lang="fi">Ursa-lähdekoodi</comment>
+	<comment xml:lang="fr">code source Ursa</comment>
+	<comment xml:lang="ga">cód foinseach Ursa</comment>
+	<comment xml:lang="hu">Ursa-forráskód</comment>
+	<comment xml:lang="id">Kode program Ursa</comment>
+	<comment xml:lang="it">Codice sorgente Ursa</comment>
+	<comment xml:lang="ja">Ursa ソースコード</comment>
+	<comment xml:lang="lt">Ursa pradinis kodas</comment>
+	<comment xml:lang="lv">Ursa pirmkods</comment>
+	<comment xml:lang="ms">Kod sumber Ursa</comment>
+	<comment xml:lang="nb">Ursa-kildekode</comment>
+	<comment xml:lang="nl">Ursa-broncode</comment>
+	<comment xml:lang="nn">Ursa-kjeldekode</comment>
+	<comment xml:lang="pl">Kod źródłowy Ursa</comment>
+	<comment xml:lang="pt">código fonte Ursa</comment>
+	<comment xml:lang="pt_BR">Código fonte Ursa</comment>
+	<comment xml:lang="ru">исходный код Ursa</comment>
+	<comment xml:lang="sq">Kod burues Ursa</comment>
+	<comment xml:lang="sv">Ursa-källkod</comment>
+	<comment xml:lang="uk">Вихідний код на мові Ursa</comment>
+	<comment xml:lang="vi">Mã nguồn Ursa</comment>
+	<comment xml:lang="zh_CN">Ursa 源代码</comment>
+	<comment xml:lang="zh_TW">Ursa 源代碼</comment>
+        <sub-class-of type="text/plain"/>
+        <glob pattern="*.ursa"/>
+    </mime-type>
+</mime-info>
