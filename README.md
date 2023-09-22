@@ -5,7 +5,7 @@
 Distributed under the MIT license.
 
 This project consists of two files that add support for the [Ursa
-programming language](https://github.com/ursalang/ursa) to the [GNOME Text
+programming language](https://ursalang.github.io) to the [GNOME Text
 Editor](https://apps.gnome.org/TextEditor),
 [Gedit](https://wiki.gnome.org/Apps/Gedit), and other programs that use
 Gtksourceview.
