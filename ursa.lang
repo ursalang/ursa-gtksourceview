@@ -222,6 +222,7 @@
     <context id="ursa" class="no-spell-check">
       <include>
         <context ref="def:c-like-comment" style-ref="comment"/>
+        <context ref="def:shebang"/>
         <context ref="function"/>
         <!-- <context ref="type"/> -->
         <context ref="keywords"/>
