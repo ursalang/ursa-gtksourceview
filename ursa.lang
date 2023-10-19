@@ -60,6 +60,9 @@
       <keyword>loop</keyword>
       <keyword>return</keyword>
       <keyword>use</keyword>
+      <keyword>and</keyword>
+      <keyword>or</keyword>
+      <keyword>not</keyword>
     </context>
 
     <!-- <context id="types" style-ref="type"> -->
