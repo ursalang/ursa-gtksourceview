@@ -21,8 +21,8 @@
     <property name="mimetypes">text/x-ursa</property>
     <property name="globs">*.ursa</property>
     <property name="line-comment-start">//</property>
-    <!-- <property name="block-comment-start">/*</property> -->
-    <!-- <property name="block-comment-end">*/</property> -->
+    <property name="block-comment-start">/*</property>
+    <property name="block-comment-end">*/</property>
   </metadata>
 
   <styles>
@@ -42,6 +42,14 @@
   </styles>
 
   <definitions>
+
+    <context id="comment-multiline-nested" style-ref="comment" class-disabled="no-spell-check" class="comment" >
+      <start>/\*</start>
+      <end>\*/</end>
+      <include>
+        <context ref="comment-multiline-nested"/>
+      </include>
+    </context>
 
     <context id="function" style-ref="keyword">
       <keyword>fn</keyword>
@@ -224,8 +232,9 @@
 
     <context id="ursa" class="no-spell-check">
       <include>
-        <context ref="def:c-like-comment" style-ref="comment"/>
         <context ref="def:shebang"/>
+        <context ref="def:c-like-comment" style-ref="comment"/>
+        <context ref="comment-multiline-nested"/>
         <context ref="function"/>
         <!-- <context ref="type"/> -->
         <context ref="keywords"/>
