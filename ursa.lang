@@ -9,9 +9,9 @@
  option. This file may not be copied, modified, or distributed
  except according to those terms.
 
- This file is based on the file published at
+ This file is based on:
 
-    https://github.com/rust-lang/gedit-config
+    https://github.com/rust-lang/gedit-config/blob/master/share/gtksourceview-3.0/language-specs/rust.lang
 
  by the Rust developers, under the same license.
 -->
