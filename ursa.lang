@@ -31,6 +31,7 @@
     <!-- <style id="char"       name="Character"     map-to="def:character"/> -->
     <style id="keyword"    name="Keyword"       map-to="def:keyword"/>
     <!-- <style id="type"       name="Data Type"     map-to="def:type"/> -->
+    <style id="null"       name="Null value"    map-to="def:constant"/>
     <style id="boolean"    name="Boolean value" map-to="def:boolean"/>
     <style id="identifier" name="Identifier"    map-to="def:identifier"/>
     <style id="number"     name="Number"        map-to="def:number"/>
@@ -60,17 +61,19 @@
     <!-- </context> -->
 
     <context id="keywords" style-ref="keyword">
+      <keyword>and</keyword>
       <keyword>break</keyword>
       <keyword>continue</keyword>
       <keyword>else</keyword>
+      <keyword>for</keyword>
       <keyword>if</keyword>
       <keyword>let</keyword>
       <keyword>loop</keyword>
+      <keyword>not</keyword>
+      <keyword>of</keyword>
+      <keyword>or</keyword>
       <keyword>return</keyword>
       <keyword>use</keyword>
-      <keyword>and</keyword>
-      <keyword>or</keyword>
-      <keyword>not</keyword>
     </context>
 
     <!-- <context id="types" style-ref="type"> -->
@@ -101,6 +104,10 @@
     <context id="boolean" style-ref="boolean">
       <keyword>true</keyword>
       <keyword>false</keyword>
+    </context>
+
+    <context id="null" style-ref="null">
+      <keyword>null</keyword>
     </context>
 
     <define-regex id="int-suffix" extended="true">
@@ -178,13 +185,13 @@
       <match>\\\%{common-escape}</match>
     </context>
 
-    <!-- <context id="raw-string" style-ref="string" class="string" class-disabled="no-spell-check"> -->
-    <!--   <start>b?r(#*)"</start> -->
-    <!--   <end>"\%{1@start}</end> -->
-    <!--   <include> -->
-    <!--     <context ref="def:line-continue"/> -->
-    <!--   </include> -->
-    <!-- </context> -->
+    <context id="raw-string" style-ref="string" class="string" class-disabled="no-spell-check">
+      <start>b?r(#*)"</start>
+      <end>"\%{1@start}</end>
+      <include>
+        <context ref="def:line-continue"/>
+      </include>
+    </context>
 
     <context id="string" style-ref="string" class="string" class-disabled="no-spell-check">
       <start>"</start>
@@ -241,13 +248,14 @@
         <!-- <context ref="types"/> -->
         <!-- <context ref="self"/> -->
         <!-- <context ref="macro"/> -->
+        <context ref="null"/>
         <context ref="boolean"/>
         <context ref="number"/>
         <context ref="invalid-number"/>
         <!-- <context ref="scope"/> -->
         <context ref="string"/>
         <context ref="byte-string"/>
-        <!-- <context ref="raw-string"/> -->
+        <context ref="raw-string"/>
         <!-- <context ref="char"/> -->
         <!-- <context ref="invalid-char"/> -->
         <!-- <context ref="byte"/> -->
