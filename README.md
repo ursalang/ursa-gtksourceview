@@ -1,6 +1,6 @@
 # GNOME text editor/GtkSourceView support for Ursa
 
-© 2023 Reuben Thomas <rrt@sc3d.org>
+© 2023-2024 Reuben Thomas <rrt@sc3d.org>
 
 Distributed under the MIT license.
 
