@@ -30,7 +30,7 @@
     <style id="string"     name="String"        map-to="def:string"/>
     <!-- <style id="char"       name="Character"     map-to="def:character"/> -->
     <style id="keyword"    name="Keyword"       map-to="def:keyword"/>
-    <!-- <style id="type"       name="Data Type"     map-to="def:type"/> -->
+    <style id="type"       name="Data Type"     map-to="def:type"/>
     <style id="null"       name="Null value"    map-to="def:constant"/>
     <style id="boolean"    name="Boolean value" map-to="def:boolean"/>
     <style id="identifier" name="Identifier"    map-to="def:identifier"/>
@@ -56,27 +56,35 @@
       <keyword>fn</keyword>
     </context>
 
-    <!-- <context id="type" style-ref="keyword"> -->
-    <!--   <keyword>type</keyword> -->
-    <!-- </context> -->
+    <context id="type" style-ref="keyword">
+      <keyword>class</keyword>
+      <keyword>trait</keyword>
+    </context>
 
     <context id="keywords" style-ref="keyword">
       <keyword>and</keyword>
+      <keyword>await</keyword>
       <keyword>break</keyword>
       <keyword>continue</keyword>
       <keyword>else</keyword>
       <keyword>for</keyword>
       <keyword>if</keyword>
+      <keyword>launch</keyword>
       <keyword>let</keyword>
       <keyword>loop</keyword>
       <keyword>not</keyword>
       <keyword>of</keyword>
       <keyword>or</keyword>
+      <keyword>pub</keyword>
       <keyword>return</keyword>
+      <keyword>static</keyword>
       <keyword>use</keyword>
+      <keyword>var</keyword>
+      <keyword>yield</keyword>
     </context>
 
-    <!-- <context id="types" style-ref="type"> -->
+    <context id="types" style-ref="type">
+      <keyword>Object</keyword>
       <!-- <keyword>bool</keyword> -->
       <!-- <keyword>isize</keyword> -->
       <!-- <keyword>usize</keyword> -->
@@ -94,7 +102,7 @@
       <!-- <keyword>f64</keyword> -->
       <!-- <keyword>char</keyword> -->
       <!-- <keyword>str</keyword> -->
-    <!-- </context> -->
+    </context>
 
     <!-- <context id="self" style-ref="self"> -->
     <!--   <keyword>Self</keyword> -->
@@ -243,9 +251,9 @@
         <context ref="def:c-like-comment" style-ref="comment"/>
         <context ref="comment-multiline-nested"/>
         <context ref="function"/>
-        <!-- <context ref="type"/> -->
+        <context ref="type"/>
         <context ref="keywords"/>
-        <!-- <context ref="types"/> -->
+        <context ref="types"/>
         <!-- <context ref="self"/> -->
         <!-- <context ref="macro"/> -->
         <context ref="null"/>
