@@ -54,6 +54,7 @@
 
     <context id="function" style-ref="keyword">
       <keyword>fn</keyword>
+      <keyword>gen</keyword>
     </context>
 
     <context id="type" style-ref="keyword">
