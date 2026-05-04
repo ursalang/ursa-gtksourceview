@@ -64,6 +64,7 @@
 
     <context id="keywords" style-ref="keyword">
       <keyword>and</keyword>
+      <keyword>asm</keyword>
       <keyword>await</keyword>
       <keyword>break</keyword>
       <keyword>continue</keyword>
